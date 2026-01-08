@@ -11,14 +11,20 @@ const container = {
   },
 };
 
-const item = {
-  hidden: { opacity: 0, y: 30 },
+import type { Variants } from "framer-motion";
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: {
+      duration: 0.4,
+      ease: [0.16, 1, 0.3, 1],
+    },
   },
 };
+
 
 export default function Features() {
   return (
