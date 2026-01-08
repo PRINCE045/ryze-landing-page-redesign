@@ -13,7 +13,7 @@ const container = {
 
 import { Variants } from "framer-motion";
 
-const item: Variants = {
+const item = {
   hidden: {
     opacity: 0,
     y: 20,
@@ -25,7 +25,7 @@ const item: Variants = {
       duration: 0.4,
     },
   },
-};
+} satisfies Variants;
 
 
 
